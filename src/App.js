@@ -7,6 +7,8 @@ import SignUp from "./Components/SignUp";
 import ShowPage from "./Components/ShowPage";
 import DataContext from "./Components/Context";
 import UserPlan from "./Components/UserPlan";
+import PaymentPage from "./Components/PaymentPage";
+import SuccessPage from "./Components/SuccessPage";
 const App = () => {
     const [data, setData] = useState({ "email": "codebyak@gmail.com", "pass": "12341234" });
     const [inputTitle, setInputTitle] = useState("");
@@ -23,7 +25,9 @@ const App = () => {
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/signup" element={<SignUp />}></Route>
                     <Route path="/showpage" element={<ShowPage />}></Route>
-                    <Route path="/userplan" element={<UserPlan/>}></Route>
+                    <Route path="/userplan" element={<UserPlan />}></Route>
+                    <Route path="/payment/:plan" element={<PaymentPage />} />
+                    <Route path="/success" element={<SuccessPage />} />;
                 </Routes>
             </DataContext.Provider>
             {/* </div> */}

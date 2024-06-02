@@ -53,7 +53,7 @@ const UserPlan = () => {
                                     <p className="card-text">
                                         <strong className="text-success">$0/month</strong>
                                     </p>
-                                    <Link href="#" className="btn btn-outline-primary">
+                                    <Link to="#" className="btn btn-outline-primary">
                                         Start Free
                                     </Link>
                                 </div>
@@ -76,7 +76,7 @@ const UserPlan = () => {
                                     <p className="card-text">
                                         <small className="text-muted">$9.99/month</small>
                                     </p>
-                                    <Link href="#" className="btn btn-primary">
+                                    <Link to="/payment/starter" className="btn btn-primary">
                                         Choose Starter
                                     </Link>
                                 </div>
@@ -99,7 +99,7 @@ const UserPlan = () => {
                                     <p className="card-text">
                                         <small className="text-muted">$29.99/month</small>
                                     </p>
-                                    <Link href="#" className="btn btn-primary">
+                                    <Link to="/payment/pro" className="btn btn-primary">
                                         Go Pro
                                     </Link>
                                 </div>
@@ -124,7 +124,7 @@ const UserPlan = () => {
                                     <p className="card-text">
                                         <small className="text-muted">Custom Pricing</small>
                                     </p>
-                                    <Link href="#" className="btn btn-primary">
+                                    <Link to="/payment/enterprise" className="btn btn-primary">
                                         Contact Sales
                                     </Link>
                                 </div>
